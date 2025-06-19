@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: sour-chat
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: OLLAMA_API_URL
+        value: "http://localhost:11434/api/generate"
+      - key: PORT
+        value: "10000"
