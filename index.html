@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SOUR - Your Coding Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>SOUR</h1>
+    <p>Your Coding Assistant powered by CodeLlama</p>
+  </header>
+  <main class="chat-container">
+    <div id="chat-box" class="chat-box">
+      <div class="message welcome-message">
+        Hello! I'm SOUR, your coding assistant powered by CodeLlama. How can I help you today?
+      </div>
+    </div>
+    <form id="chat-form" class="chat-form">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type your coding question here..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Send</button>
+    </form>
+  </main>
+</body>
+</html>
